@@ -20,8 +20,6 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    /* background: url(./img/hero.jpg) no-repeat center center/cover; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -34,6 +32,7 @@ body{
     width: 95%;
     margin: 0 auto;
     padding: 1.1rem;
+    margin-bottom: 4rem;
     justify-content: space-between;
 }
 
@@ -676,5 +675,30 @@ footer{
 
 
 
+/* Media Queries */
+@media(max-width:400px){
+
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar ul a{
+        margin: 0 0.5rem;
+        font-size: 2vw;
+    }
+
+    .nav-bar img{
+        width: 20%;
+    }
+
+    .landing-text h1{
+        font-size: 4.5vw;
+    }
+
+    .landing-text .btn a{
+        font-size: 3vw;
+    }
+}
 
 
