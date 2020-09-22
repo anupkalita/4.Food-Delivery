@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4;
+}
+
+
+
+
+/* Landing Section ----------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+#landing-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* background: url(./img/hero.jpg) no-repeat center center/cover; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-bar{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1.1rem;
+    justify-content: space-between;
+}
+
+.nav-bar img{
+    width: 10%;
+}
+
+.nav-bar ul{
+    display: flex;
+    align-self: center;
+    list-style: none;
+}
+
+.nav-bar ul a{
+    text-decoration: none;
+    margin: 0 1.1rem;
+    display: inline-block;
+    color: white;
+    font-size: 1.4vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-bar ul a:hover{
+    border-bottom: 2px solid #E67E22;
+    transition-duration: 0.7s;
+    transition-property: border;
+}
+
+/* landing-text */
+.landing-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+    top: -50px;
+}
+
+.landing-text h1{
+    font-size: 3.5vw;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/* Landing-text buttons */
+.landing-text .btn{
+    margin-top: 2rem;
+}
+.landing-text .btn a{
+    text-decoration: none;
+    padding: 0.5rem;
+    margin-right: 1vw;
+    border: 1px solid #E67E22;
+    font-size: 2vw;
+    color: #E67E22;
+    border-radius: 20px 0;
+}
+
+.landing-text .btn a:first-child{
+    color: white;
+    background-color: #E67E22;
+}
+
+.landing-text .btn a:first-child:hover{
+    background-color: #be6416;
+}
+
+.landing-text .btn a:nth-child(2):hover{
+    background-color: #E67E22;
+    color: white;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Food-Feature Section */
+#food-feature{
+    color: #5A5A5A;
+    padding-bottom: 2rem;
+}
+
+ /* food-text section  */
+.food-text{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.food-text h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    text-align: center;
+}
+
+.food-text h1:after {   /* small dash */
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 118px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.food-text .text{
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+/* Features Section */
+.features{
+    display: flex;
+    justify-content: center;
+    max-width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}  
+
+.features div{
+    display: flex;
+    flex-direction: column;
+    min-height: 20rem;
+    width: 17rem;
+    padding: 1rem;   
+}
+
+.features i,
+ .features h2, 
+ .features p{
+     padding: 0.5rem 0;
+ }
+
+ .features i{
+     color: #E67E22;
+ }
+
+ .features p{
+     font-size: 1.3rem;
+ }
+
+ .features h2{
+     font-size: 1.3rem;
+     text-transform: uppercase;
+ }
+
+/* Food Image Section */
+.food-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 20rem;
+    margin-top: 2rem;
+}
+
+.food-img img{
+    width: 300px;
+    border: 2px solid white;
+    transition: transform 0.2s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.food-img img:hover{
+    transform: scale(1.15);
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* How It Works Section */
+#how-it-works{
+    color: #5A5A5A;
+    margin-top: 2rem;
+    background-color: #EBEBEB;
+    padding-bottom: 5rem;
+}
+#how-it-works .text h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    text-align: center;
+}
+
+#how-it-works .text h1:after {   /* small dash */
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 118px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* Steps Section */
+.steps{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.steps-img{
+    flex: 1;
+    text-align: center;
+}
+
+.steps-text{
+    flex: 1;
+    max-width: 50%;
+}
+
+.steps .steps-img img{
+    width: 14rem;
+}
+
+.steps .steps-text{
+    display: flex;
+    max-width: 90%;
+    flex-direction: column;
+}
+
+.steps .steps-text div{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.steps-text div i{
+    color: #E67E22;
+}
+
+.steps-text div p{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.steps-text div img{
+    max-width: 50%;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/* Our Cities Section */
+#our-cities{
+    max-width: 95%;
+    margin: 0 auto;
+    color: #5A5A5A;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.title h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    text-align: center;
+}
+
+.title h1:after {   /* small dash */
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 118px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.cities-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.cities-content .box{
+    width: 270px;
+    margin-top: 0.5rem;
+
+}
+
+.cities-content .box img{
+    width: 100%;
+}
+
+.box h2{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+
+.data{
+    display: flex;
+    padding: 0.5rem;
+}
+
+.data p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.data i{
+    font-size: 1.3rem;
+    padding-right: 1rem;
+    color: #E67E22;
+}
+
+.data a{
+    text-decoration: none;  
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #E67E22;
+    border-bottom: 1px solid #E67E22;
+}
+
+.data a:hover{
+    color: #0CB0EE;
+    border: none;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Testimonial Section */
+#testimonial{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 70vh; */
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.testimonial-title h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonial-title h1:after {   /* small dash */
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 118px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.messages{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-style: italic;
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding:1rem;
+    margin: 1rem;
+    border: 1px solid #E67E22;
+}
+
+.content img{
+    width: 20%;
+    border-radius: 50%;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.content p:last-child{
+    padding-top: 1rem;
+    text-align: end;
+    font-size: 1.1rem;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------- */
+/* Sign Up Section */
+#sign-up{
+    color: #5A5A5A;
+    background: #EBEBEB;
+    padding-bottom: 6rem;
+}
+
+.sign-up-title h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    text-align: center;
+}
+
+.sign-up-title h1:after {   /* small dash */
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 118px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.subscriptions{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.subscriptions .plan{
+    width: 20rem;
+    color: #5A5A5A;
+    margin-top: 1rem;
+    background-color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 10px 10px 50px #b2b2b2;
+    transition: transform 0.2s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.subscriptions .plan:hover{
+    transform: scale(1.15);
+}
+
+.plan div:first-child{
+    background-color: #F7F7F7;
+    padding: 1rem;
+    border-bottom: 1px solid #b2b2b2;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.plan div:first-child h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.plan div:first-child p{
+    font-size: 1.2rem;
+}
+
+.price span{
+    font-size: 2rem;
+    color: #E67E22;
+}
+
+.price{
+    color: #E67E22;
+}
+
+.plan .usp{
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.plan .usp i{
+    color: #E67E22;
+    font-size: 0.8rem;
+    padding-right: 1rem;
+}
+
+.plan div:last-child{
+    text-align: center;
+    padding: 1rem;
+    background-color: #F7F7F7;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.plan div:last-child a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #E67E22;
+    background-color: #FAFAFA;
+    border: 1px solid #E67E22;
+    border-radius: 2rem;
+}
+
+.plan div:last-child a:hover{
+    background-color: #E67E22;
+    color: white;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Contact Section */
+#contact-us{
+    max-width: 95%;
+    margin: 0 auto;
+    color: #5A5A5A;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.contact-us-title h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-us-title h1:after {   /* small dash */
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 118px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.contact-us-form{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 30rem;
+}
+
+form div{
+    padding-bottom: 1rem;
+}
+
+form input, form select, form textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #b2b2b2;
+}
+
+form label{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.submit-btn{
+    text-align: center;
+}
+
+.submit-btn button{
+    padding: 1rem 2rem;
+    background-color: #E67E22;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.submit-btn button:hover{
+    background-color: #be6416;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Footer Section */
+footer{
+    background-color: #333333;
+}
+
+.social-handle{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    color: #b2b2b2;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.social-handle div a{
+    text-decoration: none;
+    color: #b2b2b2;
+    padding-right: 1rem;
+    font-weight: bold;
+}
+
+.social-handle div i{
+    padding-right: 1rem;
+}
+
+.social-handle div a:hover, .social-handle div i:hover{
+    color: #E67E22;
+}
+
+.copyright p{
+    text-align: center;
+    font-weight: bold;
+    color: #E67E22;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
